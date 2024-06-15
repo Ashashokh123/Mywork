@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETFLIX</title>
+    <title>Netflix</title>
     <style>
         body
         {
-            background: cover;
+        background-size: cover;
         }
         .shade
         {
@@ -16,12 +16,103 @@
             height: 100vh;
             margin-top: -10px;
             margin-left: -10px;
-            margin-bottom: -10px;
         }
+        header
+        {
+            padding: 40px;
+            color:white;
+            font-family: Arial;
+            display:flex;
+            justify-content: space-between;
+        }
+        .brand-title
+        {
+            font-size: 35px;
+            color: red;
+            font-weight: bold;
+        }
+        .btn-signin
+        {
+            background-color: red;
+            color: white;
+            padding: 4px;
+            border-radius: 5px;
+        }
+        section
+        {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 400px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .title
+        {
+            font-size: 30px;
+            font-family: Arial;
+        }
+        .sub-titlt
+        {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main
+        {
+            margin-top: 40px;
+        }
+        .email
+        {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            display: inline-block;
+            color: grey;
+            text-align: left;
+            font-size: 20px;
+        }
+        .btn-start
+        {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+        }
+        
     </style>
+    <link rel="stylesheets" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
-<body background="/public/images/netflix-background.jpg">
+<body background="/public/images/netflix-background.jpg" >
     <div class="shade"></div>
+    <header>
+        <div>
+            <span class="brand-title">NETFLIX</span>
+        </div>
+        <div>
+            <div>
+                <span class="bi bi-globe"></span>
+                <span>Language</span>
+                <span class="bi bi-chevron-down"></span>
+                <span class="btn-signin">Signin</span>
+            </div>
+        </div>
+    </header>
+<section>
+     <div>
+            <div class="title">The biggest indian hits. Ready to watch here from 149 &#8377.</div>
+            <div class="sub-title">Join today.Cancel anytime.</div>
+          <main>
+            <span class="email">Your Email Address</span>
+            <span class="btn-start">Get Started</span>
+            <span class="bi bi-cheviron-right"></span>
+          </main>
+        </div>
+    </div> 
+
+ </section>
+
     
 </body>
 </html>
