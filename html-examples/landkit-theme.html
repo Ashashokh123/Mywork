@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landkit</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         header
         {
@@ -26,12 +27,46 @@
             font-size: 20px;
             font-family:Arial;
         }
-        button
+        header button
         {
             background-color: blue;
             color:white;
             font-size: 20px;
             border-radius: 8px;
+        }
+        .main-title
+        {
+            font-family: Arial;
+            font-size: 50px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .sub-maintitle
+        {
+            font-size: 25px;
+            font-family: Arial;
+            margin-left: 100px;
+            margin-top: 20px;
+            line-height: 40px;
+
+        }
+        .main-buttons
+        {
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        .sub-button1,.sub-button2
+        {
+            padding: 10px;
+            width: 200px;
+            font-size: 20px;
+            border: none;
+        }
+        .sub-button1
+        {
+            background-color: blue;
+            color: white;
+
         }
     </style>
 </head>
@@ -53,6 +88,19 @@
 
         </div>
     </header>
+    <section>
+        <main>
+            <img src="/public/images/work.jpg" width="600px" align="right">
+            <div class="main-title">Welcome to Landkit.<br>
+                Develop anything.
+               </div>
+               <div class="sub-maintitle"> Build a beautiful, modern website with flexible Bootstrap components built from scratch.</div>
+               <div class="main-buttons">
+                <button class="sub-button1">View Pages<span class="bi bi-arrow-right"></span></button>
+                <button class="sub-button2">Documentation</button>
+               </div>
+        </main>
+    </section>
     
 </body>
 </html>
