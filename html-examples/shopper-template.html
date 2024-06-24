@@ -6,6 +6,10 @@
     <title>Shopper-template</title>
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
+        footer
+        {
+            margin-top: 1000px;
+        }
         header
         {
             font-size: 25px;
@@ -47,10 +51,6 @@
         {
             color: gold;
         }
-        section
-        {
-            height: 250px;
-        }
         footer
         {
             display: grid;
@@ -77,6 +77,129 @@
         {
             display: block;
         }
+        .women-fashion
+        {
+            background-image: url(/public/images/asha.png);
+            background: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .men-fashion
+        {
+            background-image: url(/public/images/hero.png);
+            background: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.7;
+              
+        }
+        .boys-fashion
+        {
+            background-image: url(/public/images/Ashok..png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.7;
+        
+        }
+        .women-fashion:hover
+        {
+            opacity: 1;
+        }
+        .men-fashion:hover
+        {
+            opacity: 1;
+        }
+        .boys-fashion:hover
+        {
+            opacity: 2;
+        }
+        main
+        {
+            height: 590px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap:5px;
+            margin-top: 5px;
+        }
+       
+        .card-title
+        {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+        button
+        {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            background-color: white;
+            border: none;
+            margin-top: 60px;
+        }
+        .text
+        {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .text-title
+        {
+            font: 30px;
+            font-family: Arial;
+            color: rgb(178, 168, 168);
+        }
+        .text-section
+        {
+            font-size: 30px;
+            font-family: Arial;
+            margin-top: 13px;
+            font-weight: bold;
+        }
+        .text-footer
+        {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            color: rgb(175, 167, 167);
+        }
+        .banners
+        {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            grid-gap:14px;
+            padding: 50px;
+            background: cover;
+        }
+            
+        .banner1{
+            height: 300px;
+            background-image: url(/public/images/fashion2.jpg);
+            height: 500px;
+            margin-left: 10px;
+        }
+        .banner2{
+            background-image: url(/public/images/fashion.jpg);
+            height: 500px;
+        }
+        .inside
+        {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            margin-top: 40px;
+            align-items: center;
+            margin-left: 80px;
+
+        }
+        
+
     </style>
 </head>
 <body>
@@ -114,6 +237,88 @@
     </marquee>
     </article>
     <section>
+        <main>
+            <div class="women-fashion">
+               <div>
+                <div class="card-title">
+                    Women
+                </div>
+                <div class="card-footer">
+                   <button>
+                    Shop Women<span class="bi bi-arrow-right"></span>
+                </button> 
+                </div>
+               </div>
+
+            </div>
+            <div class="men-fashion">
+                <div>
+                    <div class="card-title">
+                        Men
+                    </div>
+                    <div class="card-footer">
+                       <button>
+                        Shop Men<span class="bi bi-arrow-right"></span>
+                    </button> 
+                    </div>
+                </div>
+                   
+
+            </div>
+            <div class="boys-fashion">
+                <div>
+                <div class="card-title">
+                    Boys
+                </div>
+                <div class="card-footer">
+                   <button>
+                    Shop Boys<span class="bi bi-arrow-right"></span>
+                </button> 
+                </div>
+            </div>
+
+            </div>
+        </main>
+        <div class="text">
+            <div class="text-title">
+                NEW COLLECTION
+
+            </div>
+            <div class="text-section">
+                Best Picks 2019
+
+            </div>
+            <div class="text-footer">
+                <p>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br>
+                above fly brought Very green.</p>
+            </div>
+        </div>
+        <div class="banners">
+            <div class="banner1">
+                <div class="inside">
+                    <div>
+                        Bags Collection
+                    </div>
+                    <div>
+                       <button> Shop Now<span class="bi bi-arrow-right"></span></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="banner2">
+                <div class="inside">
+                    <div>
+                        Printed Women Dresses
+                    </div>
+                    <div>
+                       <button> Shop Now<span class="bi bi-arrow-right"></span></button>
+                    </div>
+
+                
+
+            </div>
+        </div>
 
     </section>
     <footer>
