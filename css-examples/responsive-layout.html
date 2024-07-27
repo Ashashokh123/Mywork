@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,nav,main,aside,footer
+        {
+            border:1px solid black;
+            margin: 5px;
+            padding: 10px;
+        }
+        main
+        {
+            height: 300px;
+        }
+        @media screen and (orientation:landscape)
+        {
+            body
+            {
+                display: grid;
+                grid-template-columns: 2fr 8fr 2fr;
+            }
+            header
+            {
+                grid-row: 1;
+                grid-column: 1/4;
+            }
+            nav
+            {
+                grid-row: 2;
+                grid-column: 1;
+                background-color: cyan;
+                
+            }
+            main
+            {
+                grid-row: 2;
+                grid-column: 2;
+            }
+            aside
+            {
+                grid-row: 2;
+                grid-column: 3;
+                background-color: lightgreen;
+            }
+            footer
+            {
+                grid-row: 3;
+                grid-column: 1/4;
+            }
+        }
+        @media screen and (orientation:portrait)
+        {
+            body
+            {
+                display: grid;
+                grid-template-columns: 12fr;
+            }
+            header
+            {
+                grid-row: 1;
+            }
+            nav
+            {
+                grid-row: 2;
+                background-color: cyan;
+               
+                
+            }
+            main
+            {
+                grid-row: 3;
+                
+            }
+            aside
+            {
+                grid-row: 4;
+                background-color: lightgreen;
+            }
+            footer
+            {
+                grid-row: 5;
+                
+            }
+
+        }
+            
+        
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <nav>
+        nav
+    </nav>
+    <main>
+        Main
+    </main>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        Footer
+    </footer>
+    
+</body>
+</html>
