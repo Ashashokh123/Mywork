@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-reference</title>
+    <script type="text/javascript">
+        function bodyload()
+        {
+            window.document.images[0].src = "../public/images/a1.jpg";
+            window.document.forms[0].elements[1].value="register";
+            window.document.forms[1].elements[1].value="Login";
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img width="100" height="100" border="1">
+    </div>
+    <div>
+        <h3>Register</h3>
+        <form>
+            user name: <input type="text"><input type="button">
+        </form>
+    </div>
+    <div>
+        <h3>Login</h3>
+        <form>
+            Email: <input type="email"><input type="button">
+        </form>
+    </div>
+    
+</body>
+</html>
