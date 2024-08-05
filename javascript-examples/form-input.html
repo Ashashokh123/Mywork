@@ -9,7 +9,7 @@
 </head>
 <body class="container-fluid">
     <div id="buttonContainer" class="mt-4">
-        <button class="btn btn-primary">Add Product</button>
+        <button class="btn btn-primary" data-bs-target="#register" data-bs-toggle="modal">Add Product</button>
 
     </div>
     <div class="modal fade" id="register">
@@ -22,8 +22,28 @@
             </div>
             <div class="modal-body">
                 <dl>
-                    <dt>nameS </dt>
+                    <dt>names </dt>
+                    <dd><input type="text" id="txtName" class="form-control"></dd>
+                    <dt>Price</dt>
+                    <dd><input type="number" id="txtNumber" class="form-control"></dd>
+                    <dt>Shopped to</dt>
+                    <dd>
+                        <select class="form-select" id="lstCities">
+                            <option>select city</option>
+                            <option>delhi</option>
+                            <option>hyd</option>
+                        </select>
+                    </dd>
+                    <dt>Stock</dt>
+                    <dd class="form-switch">
+                        <input class="form-check-input" type="checkbox" id="optStock"><label class="form-check-label"></label>
+                    </dd>
                 </dl>
+            </div>
+            <div class="modal-footer">
+                <button id="btnRegister" class="btn btn-primary">Register</button>
+                <button  class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+
             </div>
         </div>
     </div>
